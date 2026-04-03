@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentor Muse</title>
+<style>
+body { margin: 0; font-family: Arial, sans-serif; background-color: #f5f5f5; }
+header { background: #1E3A8A; color: white; padding: 20px; text-align: center; }
+nav { background: #F59E0B; padding: 10px; text-align: center; }
+nav a { margin: 10px; text-decoration: none; color: black; font-weight: bold; }
+section { padding: 40px; text-align: center; }
+.page { display: none; background: white; }
+footer { background: #1E3A8A; color: white; text-align: center; padding: 15px; position: fixed; bottom: 0; width: 100%; }
+</style>
+<script>
+function showPage(pageId) {
+    let pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.style.display = 'none');
+    document.getElementById(pageId).style.display = 'block';
+}
+</script>
+</head>
+<body>
+<header><h1>Mentor Muse</h1><p>Guiding Your Future</p></header>
+<nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('growth')">Personal Growth</a>
+    <a href="#" onclick="showPage('learning')">Student Learning</a>
+    <a href="#" onclick="showPage('future')">Plot Making</a>
+</nav>
+<section id="home" class="page" style="display:block;">
+    <h2>Welcome to Mentor Muse</h2>
+    <p>Empowering students with guidance, skills, and direction.</p>
+</section>
+<section id="growth" class="page"><h2>Personal Growth</h2><p>Build confidence and leadership skills.</p></section>
+<section id="learning" class="page"><h2>Student Learning</h2><p>Smart study methods and strategies.</p></section>
+<section id="future" class="page"><h2>Plot Making</h2><p>Creative story plots and future planning.</p></section>
+<footer><p>© 2026 Mentor Muse | All Rights Reserved</p></footer>
+</body>
+</html>
